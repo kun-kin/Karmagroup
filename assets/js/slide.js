@@ -132,6 +132,70 @@ $('.related-slider').slick({
 });
 
 
+$('.spa-wrap__contentmain-list.style--slider').slick({
+    dots: false,
+    arrows: true,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-regular fa-arrow-left'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-regular fa-arrow-right'></i></button>",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    mobileFirst: true,
+    responsive: [{
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            },
+        }
+    ],
+});
+
+
+$('.offers-wrap__contentmain-list.style--slider').slick({
+    dots: false,
+    arrows: true,
+    prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-regular fa-arrow-left'></i></button>",
+    nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-regular fa-arrow-right'></i></button>",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    mobileFirst: true,
+    responsive: [{
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+            },
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            },
+        }
+    ],
+});
+
+
 
 // $('.overview-list').slick({
 //     dots: true,
