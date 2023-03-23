@@ -164,35 +164,18 @@ $('.spa-wrap__contentmain-list.style--slider').slick({
 });
 
 
-$('.offers-wrap__contentmain-list.style--slider').slick({
+$('.offer-gallery__inner').slick({
     dots: false,
-    arrows: true,
+    arrows: false,
     prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa-regular fa-arrow-left'></i></button>",
     nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa-regular fa-arrow-right'></i></button>",
-    slidesToShow: 1,
+    slidesToShow: 1.6,
     slidesToScroll: 1,
+    centerMode: true,
     autoplay: false,
     autoplaySpeed: 2000,
     mobileFirst: true,
-    responsive: [{
-            breakpoint: 991,
-            settings: {
-                slidesToShow: 3,
-            },
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            },
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 2,
-            },
-        }
-    ],
+
 });
 
 
