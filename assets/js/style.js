@@ -54,6 +54,10 @@ $(document).ready(function() {
         $(this).parents('.spa-filters-dropdown').children('.spa-dropdown-wrapper').slideToggle();
     });
 
+    $(".offers-filters-dropdown .offers-filters-selected--btn").click(function() {
+        $(this).parents('.offers-filters-dropdown').children('.offers-dropdown-wrapper').slideToggle();
+    });
+
 
 
     // $('#check-in').datepicker();
@@ -113,6 +117,10 @@ $(document).ready(function() {
         if ($(e.target).closest(".spa-dropdown-wrapper").length ===
             0) {
             $('.spa-dropdown-wrapper').slideUp();
+        }
+        if ($(e.target).closest(".offers-dropdown-wrapper").length ===
+            0) {
+            $('.offers-dropdown-wrapper').slideUp();
         }
     });
 
